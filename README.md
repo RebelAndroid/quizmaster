@@ -20,37 +20,6 @@ question types are suported, which are configured in a YAML file.
 - Run `bin/server` (UNIX) or `bin/server.bat` (Windows)
 - Browse to http://localhost:9000
 
-### Using a prebuilt docker image
-
-- Run the following commands:
-
-```
-git clone https://github.com/nymanjens/quizmaster.git
-cd quizmaster
-docker-compose --file=docker-compose-prebuilt.yml up
-```
-
-- Browse to http://localhost:9000
-
-Tip: After updating `quiz-config.yml`, you can force recreate the containers as
-follows:
-
-```
-docker-compose --file=docker-compose-prebuilt.yml up --force-recreate
-```
-
-### Building and running your own release with Docker
-
-
-- Run the following commands:
-
-```
-git clone https://github.com/nymanjens/quizmaster.git
-cd quizmaster
-docker-compose --file=docker-compose-build-locally.yml up
-```
-- Browse to http://localhost:9000
-
 ## Configuration
 
 - `conf/quiz/quiz-config.yml`:<br>
